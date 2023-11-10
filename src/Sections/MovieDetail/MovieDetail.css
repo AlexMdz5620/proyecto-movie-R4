@@ -1,0 +1,30 @@
+.detail-movie-img{
+    width: 275px;
+    border-radius: 1rem;
+}
+
+.row .col h1{
+    color: white;
+}
+
+.data{
+    padding: 3rem 0;
+}
+
+.dataTow{
+    width: 50%;
+}
+
+.data .dataTow h2{
+    color: white;
+}
+
+h2, ul, p, .title{
+    color: white;
+}
+
+.img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

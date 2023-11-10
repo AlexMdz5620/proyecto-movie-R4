@@ -1,0 +1,45 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1A39;
+}
+
+.backgroudPurple {
+  background-color: #31113a;
+}
+
+.backgroudDarkPurple {
+  background-color: #451952;
+}
+
+.backgroudDarkPink {
+  background-color: #862549;
+}
+
+/* Encabezados */
+
+.h1-custom {
+  color: #AE445A;
+}
+
+.h2-custom {
+    color: #AE445A;
+}
+
+.h3-custom {
+    color: #AE445A;
+}
+
+.titles-custom {
+  color: #F39F5A;
+  font-size: 18px;
+}
+
+.text-custom {
+  color: #E8BCB9;
+  font-size: 15px;
+}
