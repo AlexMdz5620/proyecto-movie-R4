@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import EmptyImg from "../../assets/empty.png"
 import "./Card.css";
 
 export default function CardComponent(props) {
@@ -10,12 +9,15 @@ export default function CardComponent(props) {
   const handlerLike = () => {
     setIsFavorite(false);
   };
+  const handlerImgError = (e) => {
+    e.target.src = EmptyImg;
+  }
 
   return (
     <>
       <div className="card-movie backgroudPurple">
         <div >
-          <img className="card-image" src={props.portada} alt="" />
+          { props.portada == null ? <img className="card-image" src={EmptyImg} alt="" /> : <img className="card-image" src={props.portada} alt=""  onError={handlerImgError}/>}
          <div className="card-title-custom">
          <h1 className="titles-custom">{props.title}</h1>
           {isFavorite ? (
@@ -30,9 +32,6 @@ export default function CardComponent(props) {
           )}
          </div>
             <p className="text-custom">{props.description}</p>
-            <div className="card-play">
-              <span>Play</span>
-            </div>
         </div>
       </div>
     </>

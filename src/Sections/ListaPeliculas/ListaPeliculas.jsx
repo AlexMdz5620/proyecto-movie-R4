@@ -29,7 +29,7 @@ export default function ListaPeliculas(props) {
         if (e.target.value == '') {
             setPeliculasFilter(peliculas)
         } else {
-        setSearch(e.target.value) // actualiza el estado de search - guarda lo que escribi 
+        setSearch(e.target.value) 
         let pelisFilter = peliculas.filter((peli) => peli.titulo.toLowerCase().includes(search.toLowerCase()))
         setPeliculasFilter(pelisFilter)
         }
@@ -60,7 +60,7 @@ export default function ListaPeliculas(props) {
                         return (
                             <div className="col-3 mt-4 mr-2" key={index}>
                                 <Link to={`/${item.genero}/${item.titulo}`} state={item}>
-                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} />
+                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis}/>
                                 </Link>
                             </div>
                         )
