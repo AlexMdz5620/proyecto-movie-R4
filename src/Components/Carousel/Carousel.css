@@ -1,7 +1,37 @@
-.carousel-slider{
-    height: 400px;
+.carouselSize{
+    margin-left: 22%;
+    width: 650px;
+    height: auto;
 }
-
-.carousel .slide img{
-    height: 400px;
+@media screen and (max-width: 1175px){
+    .carouselSize{
+        margin-left: 18%;
+    }   
+}
+@media screen and (max-width: 1075px){
+    .carouselSize{
+        margin-left: 16%;
+    }   
+}
+@media screen and (max-width: 990px){
+    .carouselSize{
+        margin-left: 14%;
+        width: 500px;
+    }   
+}
+@media screen and (max-width: 770px){
+    .carouselSize{
+        margin-left: 2%;
+    }   
+}
+@media screen and (max-width: 575px){
+    .carouselSize{
+        margin-left: 9%;
+        width: 450px;
+    }   
+}
+@media screen and (max-width: 490px){
+    .carouselSize{
+        width: 400px;
+    }   
 }

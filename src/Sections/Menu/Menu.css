@@ -1,3 +1,10 @@
+.height{
+    height: 50px;
+}
+.container-custom{
+    display: flex;
+    justify-content: space-around;
+}
 .link{
     text-decoration: none;
     color: black;

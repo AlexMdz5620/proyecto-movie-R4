@@ -10,7 +10,7 @@
   margin: auto;
   width: 200px;
   height: 200px;
-  border: 4px solid rgba(0, 0, 0, 0.3);
+  border: none;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -20,6 +20,18 @@
   100% { transform: rotate(360deg); }
 }
 
-.text{
-  text-decoration: none;
+.input-custom{
+  width: 250px;
+  padding: 0 98px;
+  border-radius: .5rem;
+  border: none;
+}
+
+.row-custom{
+  justify-content: center;
+}
+
+.column-custom{
+  flex: 0 0 240px;
+    width: 25%;
 }

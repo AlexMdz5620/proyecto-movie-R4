@@ -1,5 +1,5 @@
 import React from 'react'
-import CarouselComponent from '../../Components/newCarousel/Carousel.jsx'
+import CarouselComponent from '../../Components/Carousel/Carousel.jsx'
 import ListaPeliculas from '../ListaPeliculas/ListaPeliculas.jsx'
 
 export default function HomeSon() {

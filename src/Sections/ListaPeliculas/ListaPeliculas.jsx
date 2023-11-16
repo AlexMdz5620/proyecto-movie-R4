@@ -2,8 +2,7 @@ import { useState, useEffect} from 'react'
 //import CardComponent from '../../Componetns/Card/Card'
 import CardComponent from '../../Components/Cards/Card'
 import { FaSpinner } from "react-icons/fa6";
-import './ListaPeliculas'
-import { Link } from 'react-router-dom';
+import './ListaPeliculas.css'
 
 export default function ListaPeliculas(props) {
 
@@ -51,17 +50,17 @@ export default function ListaPeliculas(props) {
             <div className="container mt-5">
                 <div className="row">
                     <div className="col d-flex justify-content-center">
-                        <input type="text" placeholder='search' onChange={handleSearch}/>
+                        <input type="text" className='input-custom' placeholder='Search' onChange={handleSearch}/>
                     </div>
                 </div>
         
-                <div className="row mt-3">
+                <div className="row mt-3 row-custom">
                     { peliculasFilter.map((item, index) => {
                         return (
-                            <div className="col-3 mt-4 mr-2" key={index}>
-                                <Link to={`/${item.genero}/${item.titulo}`} state={item}>
-                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis}/>
-                                </Link>
+                            <div className="mt-4 mr-2 column-custom" key={index}>
+                                {/* <Link to={`/${item.genero}/${item.titulo}`} state={item}> */}
+                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} item={item}/>
+                                {/* </Link> */}
                             </div>
                         )
                     })}
