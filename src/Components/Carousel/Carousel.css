@@ -10,6 +10,18 @@
         width: 850px;
     }   
 }
+@media screen and (max-width: 1395px){
+    .carouselSize{
+        margin-left: 16%;
+        width: 750px;
+    }   
+}
+@media screen and (max-width: 1195px){
+    .carouselSize{
+        margin-left: 15%;
+        width: 650px;
+    }   
+}
 @media screen and (max-width: 1175px){
     .carouselSize{
         margin-left: 18%;
