@@ -2,6 +2,13 @@
     margin-left: 22%;
     width: 650px;
     height: auto;
+    border-radius: 1rem;
+}
+@media screen and (max-width: 2150px){
+    .carouselSize{
+        margin-left: 18%;
+        width: 850px;
+    }   
 }
 @media screen and (max-width: 1175px){
     .carouselSize{
@@ -15,23 +22,31 @@
 }
 @media screen and (max-width: 990px){
     .carouselSize{
-        margin-left: 14%;
-        width: 500px;
+        margin-left: 7%;
+        width: 600px;
     }   
 }
 @media screen and (max-width: 770px){
     .carouselSize{
-        margin-left: 2%;
+        margin-left: 6%;
+        width: 455px;
     }   
 }
 @media screen and (max-width: 575px){
     .carouselSize{
-        margin-left: 9%;
-        width: 450px;
+        margin-left: 11%;
+        width: 425px;
     }   
 }
 @media screen and (max-width: 490px){
     .carouselSize{
+        margin-left: 7%;
         width: 400px;
+    }   
+}
+@media screen and (max-width: 420px){
+    .carouselSize{
+        margin-left: 5%;
+        width: 350px;
     }   
 }

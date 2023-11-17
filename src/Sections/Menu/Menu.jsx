@@ -9,12 +9,8 @@ export default function Menu() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary height">
       <Container className='container-custom'>
-        <div>
           <Navbar.Brand href="/">Pelis R4</Navbar.Brand>
-        </div>
-        <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavLink to={'/comedia'} className="link">Comedia</NavLink>
@@ -22,7 +18,6 @@ export default function Menu() {
               <NavLink to={'/clasicas'} className="link">Clasicas</NavLink>
             </Nav>
           </Navbar.Collapse>
-        </div>
       </Container>
     </Navbar>
   )

@@ -1,5 +1,6 @@
 .height{
-    height: 50px;
+    height: 100%;
+    margin-bottom: 20px;
 }
 .container-custom{
     display: flex;
