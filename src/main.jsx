@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from './Sections/Home/Home.jsx'
 import ListaPeliculas from './Sections/ListaPeliculas/ListaPeliculas.jsx';
